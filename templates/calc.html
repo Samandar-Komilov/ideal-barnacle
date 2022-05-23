@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../portlearn/static/css/calc.css">
   <title>Document</title>
 </head>
 <body>
-  
+  <h1>Simple calculator</h1>
+  <form name="calculator">
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" name="display" id="display" placeholder="0">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" name="clear" value="AC" onclick="calculator.display.value = ''">
+        </td>
+        <td>
+          <input type="button" name="remove" value="<" onclick="calculator.display.value += ''">
+        </td>
+        <td>
+          <input type="button" name="percent" value="%" onclick="calculator.display.value += '%'">
+        </td>
+        <td>
+          <input type="button" name="division" class="operator" value="/" onclick="calculator.display.value += '/'">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" name="seven" value="7" onclick="calculator.display.value += '7'">
+        </td>
+        <td>
+          <input type="button" name="eight" value="8" onclick="calculator.display.value += '8'">
+        </td>
+        <td>
+          <input type="button" name="nine" value="9" onclick="calculator.display.value += '9'">
+        </td>
+        <td>
+          <input type="button" name="multiplication" class="operator" value="*" onclick="calculator.display.value += '*'">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" name="four" value="4" onclick="calculator.display.value += '4'">
+        </td>
+        <td>
+          <input type="button" name="five" value="5" onclick="calculator.display.value += '5'">
+        </td>
+        <td>
+          <input type="button" name="six" value="6" onclick="calculator.display.value += '6'">
+        </td>
+        <td>
+          <input type="button" name="substraction" class="operator" value="-" onclick="calculator.display.value += '-'">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="button" name="one" value="1" onclick="calculator.display.value += '1'">
+        </td>
+        <td>
+          <input type="button" name="two" value="2" onclick="calculator.display.value += '2'">
+        </td>
+        <td>
+          <input type="button" name="three" value="3" onclick="calculator.display.value += '3'">
+        </td>
+        <td>
+          <input type="button" name="addition" class="operator" value="+" onclick="calculator.display.value += '+'">
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <input type="button" name="zero" value="0" onclick="calculator.display.value += '0'">
+        </td>
+        <td>
+          <input type="button" name="point" value="." onclick="calculator.display.value += '.'">
+        </td>
+        <td>
+          <input type="button" name="pi" value="pi" onclick="calculator.display.value += '3.14'">
+        </td>
+        <td>
+          <input type="button" name="equal" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
+        </td>
+        <!-- Demak, eval() funksiyasi asosiy rolni egallar ekan -->
+      </tr>
+    </table>
+  </form>
 </body>
 </html>
