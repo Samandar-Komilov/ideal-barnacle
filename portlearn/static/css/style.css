@@ -243,6 +243,7 @@ html{
     left: 0;
     width: 350px;
     height: 271px;
+    padding: 0 10px;
     background: #ffff00cf;
     opacity: 0;
     transition: 0.3s ease;

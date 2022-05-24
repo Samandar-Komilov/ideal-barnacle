@@ -5,3 +5,4 @@ window.addEventListener("scroll", function() {
 function navBack(){
     var nav = document.getElementById('nav').classList.toggle("change");
 }
+
